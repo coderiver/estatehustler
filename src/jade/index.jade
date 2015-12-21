@@ -4,6 +4,324 @@ block title
 	title Title of template
 
 block content
-	.out
-		+icon("octa")
-		| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, ipsum maxime, tempora deserunt minima suscipit voluptatem possimus ratione inventore eveniet autem esse accusamus eos quibusdam consequuntur quia officiis eum! Et!
+	header.header
+		.header__inner
+			a(href="#").logo
+				i.icon-logo
+				| EstateHustler
+			.header__right
+				ul.header__list
+					li
+						a(href="#") Price
+					li
+						a(href="#") Log In
+				a(href="#").btn-small Sing Up
+	.promo
+		.promo__inner
+			.promo__title Invest in rented apartments based on data
+			p EstateHustler makes it fast and easy to compare ROI of 13 000+ rented apartments in Germany day to day
+			.promo__tabs
+				ul.tabs
+					li
+						a.btn-tab.is-active(href="#") Berlin
+					li
+						a.btn-tab(href="#") Hamburg
+					li
+						a.btn-tab(href="#") Frankfurt
+					li
+						a.btn-tab(href="#") Köln
+					li
+						a.btn-tab(href="#") München
+				a(href="#").promo__more ... and other 
+				i.ttld
+			.table-wrapper
+				.table-lable * 
+					strong 5 
+					| apartments from 
+					strong 6 786 
+					| in Berlin
+				table.table
+					tbody
+						tr
+							td.table__city 
+								.table__text Berlin
+							td.table__district
+								.table__text Tempelhof
+							td.table__full-price
+								.table__sticker.is-yellow 60 000
+							td.table__rms.is-disable
+								.table__numbers 3
+							td.table__sqm.is-disable
+								.table__numbers 81,86
+							td.table__price-sqm.is-disable
+								.table__sticker.is-green 2 716,4
+							td.table__hausgeld.is-disable
+								.table__numbers 300
+							td.table__income
+								.table__numbers 1 800
+							td.table__profit
+								.table__sticker.is-green 1 500
+							td.table__roi
+								.table__sticker.is-yellow 6,8
+							td.table__district-price
+								.table__sticker.is-green 10,5
+							td.table__agency.is-disable
+								.table__text Engels&Vö
+						tr
+							td.table__city 
+								.table__text Berlin
+							td.table__district
+								.table__text Tempelhof
+							td.table__full-price
+								.table__sticker.is-yellow 60 000
+							td.table__rms.is-disable
+								.table__numbers 3
+							td.table__sqm.is-disable
+								.table__numbers 81,86
+							td.table__price-sqm.is-disable
+								.table__sticker.is-green 2 716,4
+							td.table__hausgeld.is-disable
+								.table__numbers 300
+							td.table__income
+								.table__numbers 1 800
+							td.table__profit
+								.table__sticker.is-green 1 500
+							td.table__roi
+								.table__sticker.is-yellow 6,8
+							td.table__district-price
+								.table__sticker.is-green 10,5
+							td.table__agency.is-disable
+								.table__text Engels&Vö
+						tr
+							td.table__city 
+								.table__text Berlin
+							td.table__district
+								.table__text Tempelhof
+							td.table__full-price
+								.table__sticker.is-yellow 60 000
+							td.table__rms.is-disable
+								.table__numbers 3
+							td.table__sqm.is-disable
+								.table__numbers 81,86
+							td.table__price-sqm.is-disable
+								.table__sticker.is-green 2 716,4
+							td.table__hausgeld.is-disable
+								.table__numbers 300
+							td.table__income
+								.table__numbers 1 800
+							td.table__profit
+								.table__sticker.is-green 1 500
+							td.table__roi
+								.table__sticker.is-yellow 6,8
+							td.table__district-price
+								.table__sticker.is-green 10,5
+							td.table__agency.is-disable
+								.table__text Engels&Vö
+						tr
+							td.table__city 
+								.table__text Berlin
+							td.table__district
+								.table__text Tempelhof
+							td.table__full-price
+								.table__sticker.is-yellow 60 000
+							td.table__rms.is-disable
+								.table__numbers 3
+							td.table__sqm.is-disable
+								.table__numbers 81,86
+							td.table__price-sqm.is-disable
+								.table__sticker.is-green 2 716,4
+							td.table__hausgeld.is-disable
+								.table__numbers 300
+							td.table__income
+								.table__numbers 1 800
+							td.table__profit
+								.table__sticker.is-green 1 500
+							td.table__roi
+								.table__sticker.is-yellow 6,8
+							td.table__district-price
+								.table__sticker.is-green 10,5
+							td.table__agency.is-disable
+								.table__text Engels&Vö
+						tr
+							td.table__city 
+								.table__text Berlin
+							td.table__district
+								.table__text Tempelhof
+							td.table__full-price
+								.table__sticker.is-yellow 60 000
+							td.table__rms.is-disable
+								.table__numbers 3
+							td.table__sqm.is-disable
+								.table__numbers 81,86
+							td.table__price-sqm.is-disable
+								.table__sticker.is-green 2 716,4
+							td.table__hausgeld.is-disable
+								.table__numbers 300
+							td.table__income
+								.table__numbers 1 800
+							td.table__profit
+								.table__sticker.is-green 1 500
+							td.table__roi
+								.table__sticker.is-yellow 6,8
+							td.table__district-price
+								.table__sticker.is-green 10,5
+							td.table__agency.is-disable
+								.table__text Engels&Vö
+				.grid
+					button.btn.btn_blue.js-popup-btn(data-btn="apartments") See all apartments
+	.main.main_index
+		.time
+			.time__inner
+				i.time__icon
+				| Our lists get renewed every day at 8:00 AM Berlin time
+		.stats
+			.stats__title
+				| Today stats: 
+				strong 65 670 
+				small  rented apartments in Germany
+			.stats__row
+				.stats__left
+					.stats-box.stats-box_roi
+						.stats-box__numbers
+							.stats-box__number
+								strong 2,5
+							sup %
+						.stats-box__text average ROI 
+							br
+							| in Germany
+					.stats-box.stats-box_eur
+						.stats-box__numbers
+							.stats-box__number
+								strong 600
+							sup eur
+						.stats-box__text avarege
+							br
+							| mounth income
+				.stats__right
+					.stats-box.stats-box_apartments
+						.stats-box__numbers.stats-box__numbers_gradient
+							.stats-box__number
+								strong 240
+						.stats-box__text apartments
+					.stats-box.stats-box_roi-mod
+						.stats-box__top with
+						.stats-box__numbers.stats-box__numbers_gradient
+							.stats-box__number
+								strong 9
+							sup %
+						.stats-box__text ROI
+					.stats-box.stats-box_eur-mod
+						.stats-box__numbers.stats-box__numbers_gradient
+							.stats-box__number
+								strong 86 000
+							sup eur
+						.stats-box__text min. price for apartment
+		.quote
+			.quote__author
+				.quote__img
+					img(src="img/kzag.jpg", alt="")
+				.quote__info Konstantin Zagainov, founder
+			.quote__text
+				p EstateHustler analyzes return on investment information from apartments sold in Germany today.
+				p This information is carefully sorted to enable you 
+					br
+					| to make a decision for a profitable investment.
+		.section
+			.section__inner
+				.section__title Got some savings?
+				.section__text
+					p Investment into real estate is more profitable than savings in a bank and less risky than stock trading or startups. Find out how to make profitable 
+						br 
+						| real estate investments.
+				a(href="#").btn.btn_white Explore the data
+		.container
+			.container__inner
+				.container__title One simple price
+				.container__subtitle Start invest in rented appartment today. It’s that easy.
+				.box
+					.box__title Full access to the database
+					.box__price
+						strong 59 
+						span euro / month
+					button.btn.btn_blue Get the access
+					.box__text Feel EstateHustle does not suits your needs? 
+					.box__text 
+						p Unsubscribe in 
+							strong 2 weeks 
+							| and pay only 
+							a(href="#") 10 euro 
+				.container__row
+					.container__col
+						.info
+							i.icon-rent
+							p See all rented apartments in Germany in one table
+					.container__col
+						.info
+							i.icon-money
+							p Become an investor. 
+							p Invest from 30 000 euro 
+								br 
+								| in RealEstate with high 
+								br
+								| ROI
+				.container__row
+					.container__col
+						.info
+							i.icon-logo
+							p Make decisions based on data not on yours agents feeling
+					.container__col
+						.info
+							i.icon-map
+							p Think wide. Compare apartments in different sities, with different prices based on your future outcome.
+	footer.footer
+		.footer__inner
+			.footer__menu
+				.footer__subtitle EstateHustler
+				ul.footer__list
+					li
+						a(href="#") About
+					li
+						a(href="#") Price
+					li
+						a(href="#") Contact
+					li
+						a(href="#") Impressum
+					li
+						a(href="#") Blog
+			.footer__share
+				.footer__subtitle Follow us
+				ul.footer__social
+					li
+						a(href="#")
+							i.icon-tw
+					li
+						a(href="#")
+							i.icon-fb
+			.footer__feedback
+				.footer__title Got feedback?
+				.footer__form
+					form(action="")
+						.footer__field
+							input.footer__input(type="text" placeholder="Your email")
+						.footer__field
+							input.footer__input(type="text" placeholder="Ask a question")
+						.footer__bottom
+							button.btn.btn_white.btn_small Submit
+			.copyright © 2015 EstateHustler.com
+
+	.popup-wrapper.js-popup(data-popup="apartments")
+		.popup.js-popup-inner
+			.ap-box
+				.ap-box__title Apartment 
+					strong in Berlin
+				ul.ap-box__list
+					li price  
+						span
+							strong 205 000 
+							| euro
+					li 4 rooms / 120 sq.m.
+					li monthly profit 
+						span 1200 euro
+				.ap-box__discount ROI 10%
+			.popup__text EstateHustler gathering and analize thousands apartments in Germany from other websites.
+			a(href="#").btn.btn_blue.btn_big See the apartment 

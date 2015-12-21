@@ -1,19 +1,397 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="theme-color" content="#fff">
-	<link rel="stylesheet" media="all" href="css/style.css" >
-	<script src="js/app.js"></script>
-</head>
-<body>
-<!-- BEGIN  out-->
-<div class="out">
-	<i class="icon-sepa"></i>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus, quod eum rerum molestiae consectetur inventore autem nisi mollitia sit at dolore quam aliquam ipsum. Hic, consequatur obcaecati facere. Consectetur.
-</div>
-<!-- END out-->
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Title of template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <header class="header">
+        <div class="header__inner"><a href="#" class="logo"><i class="icon-logo"></i>EstateHustler</a>
+          <div class="header__right">
+            <ul class="header__list">
+              <li><a href="#">Price</a></li>
+              <li><a href="#">Log In</a></li>
+            </ul><a href="#" class="btn-small">Sing Up</a>
+          </div>
+        </div>
+      </header>
+      <div class="promo">
+        <div class="promo__inner">
+          <div class="promo__title">Invest in rented apartments based on data</div>
+          <p>EstateHustler makes it fast and easy to compare ROI of 13 000+ rented apartments in Germany day to day</p>
+          <div class="promo__tabs">
+            <ul class="tabs">
+              <li><a href="#" class="btn-tab is-active">Berlin</a></li>
+              <li><a href="#" class="btn-tab">Hamburg</a></li>
+              <li><a href="#" class="btn-tab">Frankfurt</a></li>
+              <li><a href="#" class="btn-tab">Köln</a></li>
+              <li><a href="#" class="btn-tab">München</a></li>
+            </ul><a href="#" class="promo__more">... and other </a><i class="ttld"></i>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-lable">* <strong>5 </strong>apartments from <strong>6 786 </strong>in Berlin</div>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td class="table__city"> 
+                    <div class="table__text">Berlin</div>
+                  </td>
+                  <td class="table__district">
+                    <div class="table__text">Tempelhof</div>
+                  </td>
+                  <td class="table__full-price">
+                    <div class="table__sticker is-yellow">60 000</div>
+                  </td>
+                  <td class="table__rms is-disable">
+                    <div class="table__numbers">3</div>
+                  </td>
+                  <td class="table__sqm is-disable">
+                    <div class="table__numbers">81,86</div>
+                  </td>
+                  <td class="table__price-sqm is-disable">
+                    <div class="table__sticker is-green">2 716,4</div>
+                  </td>
+                  <td class="table__hausgeld is-disable">
+                    <div class="table__numbers">300</div>
+                  </td>
+                  <td class="table__income">
+                    <div class="table__numbers">1 800</div>
+                  </td>
+                  <td class="table__profit">
+                    <div class="table__sticker is-green">1 500</div>
+                  </td>
+                  <td class="table__roi">
+                    <div class="table__sticker is-yellow">6,8</div>
+                  </td>
+                  <td class="table__district-price">
+                    <div class="table__sticker is-green">10,5</div>
+                  </td>
+                  <td class="table__agency is-disable">
+                    <div class="table__text">Engels&Vö</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__city"> 
+                    <div class="table__text">Berlin</div>
+                  </td>
+                  <td class="table__district">
+                    <div class="table__text">Tempelhof</div>
+                  </td>
+                  <td class="table__full-price">
+                    <div class="table__sticker is-yellow">60 000</div>
+                  </td>
+                  <td class="table__rms is-disable">
+                    <div class="table__numbers">3</div>
+                  </td>
+                  <td class="table__sqm is-disable">
+                    <div class="table__numbers">81,86</div>
+                  </td>
+                  <td class="table__price-sqm is-disable">
+                    <div class="table__sticker is-green">2 716,4</div>
+                  </td>
+                  <td class="table__hausgeld is-disable">
+                    <div class="table__numbers">300</div>
+                  </td>
+                  <td class="table__income">
+                    <div class="table__numbers">1 800</div>
+                  </td>
+                  <td class="table__profit">
+                    <div class="table__sticker is-green">1 500</div>
+                  </td>
+                  <td class="table__roi">
+                    <div class="table__sticker is-yellow">6,8</div>
+                  </td>
+                  <td class="table__district-price">
+                    <div class="table__sticker is-green">10,5</div>
+                  </td>
+                  <td class="table__agency is-disable">
+                    <div class="table__text">Engels&Vö</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__city"> 
+                    <div class="table__text">Berlin</div>
+                  </td>
+                  <td class="table__district">
+                    <div class="table__text">Tempelhof</div>
+                  </td>
+                  <td class="table__full-price">
+                    <div class="table__sticker is-yellow">60 000</div>
+                  </td>
+                  <td class="table__rms is-disable">
+                    <div class="table__numbers">3</div>
+                  </td>
+                  <td class="table__sqm is-disable">
+                    <div class="table__numbers">81,86</div>
+                  </td>
+                  <td class="table__price-sqm is-disable">
+                    <div class="table__sticker is-green">2 716,4</div>
+                  </td>
+                  <td class="table__hausgeld is-disable">
+                    <div class="table__numbers">300</div>
+                  </td>
+                  <td class="table__income">
+                    <div class="table__numbers">1 800</div>
+                  </td>
+                  <td class="table__profit">
+                    <div class="table__sticker is-green">1 500</div>
+                  </td>
+                  <td class="table__roi">
+                    <div class="table__sticker is-yellow">6,8</div>
+                  </td>
+                  <td class="table__district-price">
+                    <div class="table__sticker is-green">10,5</div>
+                  </td>
+                  <td class="table__agency is-disable">
+                    <div class="table__text">Engels&Vö</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__city"> 
+                    <div class="table__text">Berlin</div>
+                  </td>
+                  <td class="table__district">
+                    <div class="table__text">Tempelhof</div>
+                  </td>
+                  <td class="table__full-price">
+                    <div class="table__sticker is-yellow">60 000</div>
+                  </td>
+                  <td class="table__rms is-disable">
+                    <div class="table__numbers">3</div>
+                  </td>
+                  <td class="table__sqm is-disable">
+                    <div class="table__numbers">81,86</div>
+                  </td>
+                  <td class="table__price-sqm is-disable">
+                    <div class="table__sticker is-green">2 716,4</div>
+                  </td>
+                  <td class="table__hausgeld is-disable">
+                    <div class="table__numbers">300</div>
+                  </td>
+                  <td class="table__income">
+                    <div class="table__numbers">1 800</div>
+                  </td>
+                  <td class="table__profit">
+                    <div class="table__sticker is-green">1 500</div>
+                  </td>
+                  <td class="table__roi">
+                    <div class="table__sticker is-yellow">6,8</div>
+                  </td>
+                  <td class="table__district-price">
+                    <div class="table__sticker is-green">10,5</div>
+                  </td>
+                  <td class="table__agency is-disable">
+                    <div class="table__text">Engels&Vö</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table__city"> 
+                    <div class="table__text">Berlin</div>
+                  </td>
+                  <td class="table__district">
+                    <div class="table__text">Tempelhof</div>
+                  </td>
+                  <td class="table__full-price">
+                    <div class="table__sticker is-yellow">60 000</div>
+                  </td>
+                  <td class="table__rms is-disable">
+                    <div class="table__numbers">3</div>
+                  </td>
+                  <td class="table__sqm is-disable">
+                    <div class="table__numbers">81,86</div>
+                  </td>
+                  <td class="table__price-sqm is-disable">
+                    <div class="table__sticker is-green">2 716,4</div>
+                  </td>
+                  <td class="table__hausgeld is-disable">
+                    <div class="table__numbers">300</div>
+                  </td>
+                  <td class="table__income">
+                    <div class="table__numbers">1 800</div>
+                  </td>
+                  <td class="table__profit">
+                    <div class="table__sticker is-green">1 500</div>
+                  </td>
+                  <td class="table__roi">
+                    <div class="table__sticker is-yellow">6,8</div>
+                  </td>
+                  <td class="table__district-price">
+                    <div class="table__sticker is-green">10,5</div>
+                  </td>
+                  <td class="table__agency is-disable">
+                    <div class="table__text">Engels&Vö</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="grid">
+              <button data-btn="apartments" class="btn btn_blue js-popup-btn">See all apartments</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main main_index">
+        <div class="time">
+          <div class="time__inner"><i class="time__icon"></i>Our lists get renewed every day at 8:00 AM Berlin time</div>
+        </div>
+        <div class="stats">
+          <div class="stats__title">Today stats: <strong>65 670 </strong><small> rented apartments in Germany</small></div>
+          <div class="stats__row">
+            <div class="stats__left">
+              <div class="stats-box stats-box_roi">
+                <div class="stats-box__numbers">
+                  <div class="stats-box__number"><strong>2,5</strong></div><sup>%</sup>
+                </div>
+                <div class="stats-box__text">average ROI <br>in Germany</div>
+              </div>
+              <div class="stats-box stats-box_eur">
+                <div class="stats-box__numbers">
+                  <div class="stats-box__number"><strong>600</strong></div><sup>eur</sup>
+                </div>
+                <div class="stats-box__text">avarege<br>mounth income</div>
+              </div>
+            </div>
+            <div class="stats__right">
+              <div class="stats-box stats-box_apartments">
+                <div class="stats-box__numbers stats-box__numbers_gradient">
+                  <div class="stats-box__number"><strong>240</strong></div>
+                </div>
+                <div class="stats-box__text">apartments</div>
+              </div>
+              <div class="stats-box stats-box_roi-mod">
+                <div class="stats-box__top">with</div>
+                <div class="stats-box__numbers stats-box__numbers_gradient">
+                  <div class="stats-box__number"><strong>9</strong></div><sup>%</sup>
+                </div>
+                <div class="stats-box__text">ROI</div>
+              </div>
+              <div class="stats-box stats-box_eur-mod">
+                <div class="stats-box__numbers stats-box__numbers_gradient">
+                  <div class="stats-box__number"><strong>86 000</strong></div><sup>eur</sup>
+                </div>
+                <div class="stats-box__text">min. price for apartment</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="quote">
+          <div class="quote__author">
+            <div class="quote__img"><img src="img/kzag.jpg" alt=""></div>
+            <div class="quote__info">Konstantin Zagainov, founder</div>
+          </div>
+          <div class="quote__text">
+            <p>EstateHustler analyzes return on investment information from apartments sold in Germany today.</p>
+            <p>This information is carefully sorted to enable you <br>to make a decision for a profitable investment.</p>
+          </div>
+        </div>
+        <div class="section">
+          <div class="section__inner">
+            <div class="section__title">Got some savings?</div>
+            <div class="section__text">
+              <p>Investment into real estate is more profitable than savings in a bank and less risky than stock trading or startups. Find out how to make profitable <br>real estate investments.</p>
+            </div><a href="#" class="btn btn_white">Explore the data</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="container__inner">
+            <div class="container__title">One simple price</div>
+            <div class="container__subtitle">Start invest in rented appartment today. It’s that easy.</div>
+            <div class="box">
+              <div class="box__title">Full access to the database</div>
+              <div class="box__price"><strong>59 </strong><span>euro / month</span></div>
+              <button class="btn btn_blue">Get the access</button>
+              <div class="box__text">Feel EstateHustle does not suits your needs? </div>
+              <div class="box__text"> 
+                <p>Unsubscribe in <strong>2 weeks </strong>and pay only <a href="#">10 euro </a></p>
+              </div>
+            </div>
+            <div class="container__row">
+              <div class="container__col">
+                <div class="info"><i class="icon-rent"></i>
+                  <p>See all rented apartments in Germany in one table</p>
+                </div>
+              </div>
+              <div class="container__col">
+                <div class="info"><i class="icon-money"></i>
+                  <p>Become an investor. </p>
+                  <p>Invest from 30 000 euro <br>in RealEstate with high <br>ROI</p>
+                </div>
+              </div>
+            </div>
+            <div class="container__row">
+              <div class="container__col">
+                <div class="info"><i class="icon-logo"></i>
+                  <p>Make decisions based on data not on yours agents feeling</p>
+                </div>
+              </div>
+              <div class="container__col">
+                <div class="info"><i class="icon-map"></i>
+                  <p>Think wide. Compare apartments in different sities, with different prices based on your future outcome.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__menu">
+            <div class="footer__subtitle">EstateHustler</div>
+            <ul class="footer__list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Price</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Impressum</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer__share">
+            <div class="footer__subtitle">Follow us</div>
+            <ul class="footer__social">
+              <li><a href="#"><i class="icon-tw"></i></a></li>
+              <li><a href="#"><i class="icon-fb"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer__feedback">
+            <div class="footer__title">Got feedback?</div>
+            <div class="footer__form">
+              <form action="">
+                <div class="footer__field">
+                  <input type="text" placeholder="Your email" class="footer__input">
+                </div>
+                <div class="footer__field">
+                  <input type="text" placeholder="Ask a question" class="footer__input">
+                </div>
+                <div class="footer__bottom">
+                  <button class="btn btn_white btn_small">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="copyright">© 2015 EstateHustler.com</div>
+        </div>
+      </footer>
+      <div data-popup="apartments" class="popup-wrapper js-popup">
+        <div class="popup js-popup-inner">
+          <div class="ap-box">
+            <div class="ap-box__title">Apartment <strong>in Berlin</strong></div>
+            <ul class="ap-box__list">
+              <li>price  <span><strong>205 000 </strong>euro</span></li>
+              <li>4 rooms / 120 sq.m.</li>
+              <li>monthly profit <span>1200 euro</span></li>
+            </ul>
+            <div class="ap-box__discount">ROI 10%</div>
+          </div>
+          <div class="popup__text">EstateHustler gathering and analize thousands apartments in Germany from other websites.</div><a href="#" class="btn btn_blue btn_big">See the apartment </a>
+        </div>
+      </div>
+    </div>
+    <!--END out-->
+  </body>
 </html>
