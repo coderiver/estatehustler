@@ -2,4 +2,5 @@
 //=include lib/slick.min.js
 //=include lib/bootstrap.min.js
 //=include lib/validator.min.js
+//=include jquery.dataTables.min.js
 //=include common.js

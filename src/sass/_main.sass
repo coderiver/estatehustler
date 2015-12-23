@@ -45,11 +45,23 @@
 	border-radius: 4px
 	padding: 12px 40px 12px 15px
 	min-width: 120px 
+	position: relative
+	text-align: left
+	text-decoration: none
+	&:hover, &:focus, &:active
+		text-decoration: none
 	&__name
 		color: #000
 		font-size: 14px
 		line-height: 16px
 		+med
+	i
+		position: absolute
+		top: 50%
+		right: 12px
+		margin-top: -8px
+		color: #9b9b9b
+		font-size: 16px
 .logo
 	color: white
 	font-size: 20px
@@ -131,7 +143,9 @@
 .table
 	color: #000
 	font-size: 15px
-	table-layout: fixed
+	border: none !important
+	border-collapse: collapse !important
+	// table-layout: fixed
 	&-wrapper
 		padding: 17px 18px
 		background: #fff 
@@ -175,6 +189,7 @@
 						&:before, &:after
 							border-color: #ebdc18						
 	tbody
+		border: none
 		tr
 			border-left: 2px solid transparent
 			border-right: 2px solid transparent
@@ -247,12 +262,14 @@
 						width: 100%
 						line-height: 25px
 						padding: 0 8px 
+						+box
 						+med
 					&__numbers
 						line-height: 25px
 				&.is-disable
 					color: #8f8f8f
 	td, th
+		outline: none !important
 		&.table
 			&__city, &__district, &__district, &__full-price, &__price-sqm, &__hausgeld, &__hausgeld, &__agency
 				padding-left: 8px
@@ -286,11 +303,13 @@
 	thead
 		tr
 			th
+				font-weight: normal
 				vertical-align: top
 				color: #000
 				font-size: 16px
 				line-height: 19px
-				padding: 0 8px 30px
+				padding: 0 8px 35px
+				border: none
 				&.is-disable
 					color: #9b9b9b
 				strong
@@ -302,6 +321,9 @@
 	background: url(../img/grid.png) no-repeat top center
 	background-size: contain
 	padding: 6px 10px  
+	.button_blue
+		&:hover
+			box-shadow: none
 
 .main
 	background: #fff
@@ -454,7 +476,7 @@
 			line-height: 34px
 
 .section
-	background-color: #4a90e2
+	background-color: #46382b
 	+cover
 	&__inner
 		max-width: 886px
@@ -473,6 +495,11 @@
 		color: #fff
 		font-size: 18px
 		line-height: 29px
+	.button_white
+		&:hover
+			background-color: #4a90e2
+			color: #fff
+			border-color: #4a90e2  
 
 .content
 	background-image: linear-gradient(180deg, #fff 0%, #f2f2f2 100%)
@@ -583,7 +610,7 @@
 	background-color: #4a4a4a
 	height: 334px
 	&__inner
-		max-width: 886px
+		max-width: 912px
 		padding: 50px 18px 38px
 		margin: 0 auto 
 		+clr
@@ -631,6 +658,9 @@
 			border-radius: 50%
 			color: #4a4a4a
 			+vertical
+			&:hover
+				color: #4a4a4a
+				background: rgba(#fff, 0.56) 
 			i				
 				display: inline-block
 				vertical-align: middle
@@ -813,46 +843,93 @@
 		max-width: 976px
 		margin: 0 auto 
 	.table
-		margin: 0
-	&__bottom
-		max-width: 976px
-		margin: 0 auto 
-		padding: 12px 28px 61px
-		+clr
-	&__results
+		margin: 0 0 29px
+
+.dataTables_wrapper 
+	font-size: 0
+	padding-bottom: 61px
+	.dataTables_info
 		color: #4a4a4a
 		font-size: 14px
 		line-height: 18px
 		+light
 		float: left
-		padding: 9px 0 
+		padding: 9px 10px
 		strong
 			+med
-	.pages
-		float: right
-
-.pages
-	font-size: 0
-	&__text
-		color: #4a4a4a
-		font-size: 15px
-		line-height: 18px
-		padding: 9px 13px 
-		display: inline-block
-		vertical-align: top
-	&__btn
-		width: 36px
-		height: 36px
-		border: 1px solid #b9b9b9
-		border-radius: 4px
-		+vertical
-		color: #7b7b7b
-		display: inline-block
-		vertical-align: top
-		&:hover
-			color: #000
-			border-color: #000 
-		i
+	.dataTables_paginate
+		padding: 0
+		span
 			display: inline-block
-			vertical-align: middle
-			font-size: 11px
+			vertical-align: top
+		.paginate
+			&_button
+				width: 36px
+				height: 36px
+				border: 1px solid #b9b9b9
+				border-radius: 4px
+				color: #7b7b7b
+				display: inline-block
+				vertical-align: top
+				font-size: 15px
+				padding: 0
+				line-height: 34px
+				background: none !important
+				margin: 0 3px 
+				box-shadow: none !important
+				&:hover, &.current
+					color: #000 !important
+					border-color: #000 
+				i
+					display: inline-block
+					vertical-align: middle
+					font-size: 11px
+				&.disabled
+					border-color: #b9b9b9 
+					&:hover, &:active, &:focus
+						border-color: #b9b9b9 
+				&.previous, &.next
+					+vertical
+table.dataTable 
+	thead 
+		th
+			position: relative
+			background: none !important
+			&.sorting_asc
+				.table
+					&__triangles
+						&:before
+							+arr(10, 6, #528a67, t)
+							top: 4px
+						&:after
+							display: none
+			&.sorting_desc 
+				.table
+					&__triangles
+						&:before
+							display: none
+						&:after
+							+arr(10, 6, #e8374d, b)
+							bottom: 2px
+			&.sorting_disabled
+				.table
+					&__triangles
+						display: none
+			.table
+				&__triangles
+					position: absolute
+					bottom: 9px
+					left: 50%
+					margin-left: -5px
+					width: 10px
+					height: 15px
+					&:before, &:after
+						content: "" 
+						position: absolute
+						left: 0
+					&:before
+						+arr(10, 6, #b9b9b9, t)
+						top: 0
+					&:after
+						+arr(10, 6, #b9b9b9, b)
+						bottom: 0

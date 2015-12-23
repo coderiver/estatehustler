@@ -11,7 +11,7 @@ block content
 				| EstateHustler
 			.header__right
 				.header__text Hello Hustler!
-				.h-profile
+				a(href="#").h-profile
 					i.icon-settings
 					.h-profile__name Andrey
 	.main.main_bg
@@ -37,40 +37,52 @@ block content
 				|  rented apartments in Germany today
 			.main-table__inner
 				.table-wrapper
-					table.table.table_mod
+					table.table.table_mod.js-table
 						thead
 							tr								
 								th.table__city
 									.table__title City
+									.table__triangles
 								th.table__district
 									.table__title District
+									.table__triangles
 								th.table__full-price
 									.table__title 
 										strong Full price
+									.table__triangles
 								th.table__rms.is-disable
 									.table__title Rms.
+									.table__triangles
 								th.table__sqm.is-disable
 									.table__title Sq.m.
+									.table__triangles
 								th.table__price-sqm.is-disable
 									.table__title Price per sq.m.
+									.table__triangles
 								th.table__hausgeld.is-disable
 									.table__title Haus-geld
+									.table__triangles
 								th.table__income
 									.table__title Rental income
+									.table__triangles
 								th.table__profit
 									.table__title 
 										strong Monthly profit
+									.table__triangles
 								th.table__roi
 									.table__title 
 										strong ROI from rent, %
+									.table__triangles
 								th.table__district-price
 									.table__title District growth price, %
+									.table__triangles
 								th.table__agency.is-disable
 									.table__title Agency
+									.table__triangles
 						tbody
 							tr
 								td.table__city 
-									.table__text Berlin
+									.table__text 1Berlin
 								td.table__district
 									.table__text Tempelhof
 								td.table__full-price
@@ -95,7 +107,7 @@ block content
 									.table__text Engels&Vö
 							tr
 								td.table__city 
-									.table__text Berlin
+									.table__text 2Berlin
 								td.table__district
 									.table__text Tempelhof
 								td.table__full-price
@@ -120,7 +132,7 @@ block content
 									.table__text Engels&Vö
 							tr
 								td.table__city 
-									.table__text Berlin
+									.table__text 3Berlin
 								td.table__district
 									.table__text Tempelhof
 								td.table__full-price
@@ -145,7 +157,7 @@ block content
 									.table__text Engels&Vö
 							tr
 								td.table__city 
-									.table__text Berlin
+									.table__text 4Berlin
 								td.table__district
 									.table__text Tempelhof
 								td.table__full-price
@@ -170,7 +182,7 @@ block content
 									.table__text Engels&Vö
 							tr
 								td.table__city 
-									.table__text Berlin
+									.table__text 5Berlin
 								td.table__district
 									.table__text Tempelhof
 								td.table__full-price
@@ -193,15 +205,503 @@ block content
 									.table__sticker.is-green 10,5
 								td.table__agency.is-disable
 									.table__text Engels&Vö
-				.main-table__bottom
-					.main-table__results
-						strong 22
-						|  from 
-						strong 2 034
-						|  apartments
-					.pages
-						a(href="#").pages__btn
-							i.icon-prev
-						.pages__text page 1 from 60
-						a(href="#").pages__btn
-							i.icon-next
+							tr
+								td.table__city 
+									.table__text 1Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 2Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 3Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 4Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 5Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 1Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 2Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 3Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 4Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 5Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 1Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 2Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 3Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 4Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 5Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 1Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 2Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 3Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 4Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
+							tr
+								td.table__city 
+									.table__text 5Berlin
+								td.table__district
+									.table__text Tempelhof
+								td.table__full-price
+									.table__sticker.is-yellow 60 000
+								td.table__rms.is-disable
+									.table__numbers 3
+								td.table__sqm.is-disable
+									.table__numbers 81,86
+								td.table__price-sqm.is-disable
+									.table__sticker.is-green 2 716,4
+								td.table__hausgeld.is-disable
+									.table__numbers 300
+								td.table__income
+									.table__numbers 1 800
+								td.table__profit
+									.table__sticker.is-green 1 500
+								td.table__roi
+									.table__sticker.is-yellow 6,8
+								td.table__district-price
+									.table__sticker.is-green 10,5
+								td.table__agency.is-disable
+									.table__text Engels&Vö
