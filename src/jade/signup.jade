@@ -1,0 +1,63 @@
+extends _layout-bg
+
+block title
+	title Title of template
+
+block content
+	header.header
+		.header__inner
+			a(href="#").logo
+				i.icon-logo
+				| EstateHustler
+	.sign-up
+		.steps
+			ul.steps__list
+				li.is-active
+					.steps__number 1
+					.steps__title Sing Up
+				li
+					.steps__number 2
+					.steps__title Pay
+				li
+					.steps__number 3
+					.steps__title Explore the data
+		.sign-up__container
+			.sign-up__form
+				.form
+					form(action="" role="form").js-validation
+						.form__title Sing up
+						.form__field.form-group
+							span.form__field-title Your name
+							label.form__label
+								span(aria-hidden="true").glyphicon.form-control-feedback
+								input(type="text" data-error="Required field" required).form__input.form-control
+							.help-block.with-errors
+						.form__field.form-group
+							span.form__field-title E-mail
+							label.form__label
+								span(aria-hidden="true").glyphicon.form-control-feedback
+								input(type="email" data-error="Incorrect email adress" required).form__input.form-control
+							.help-block.with-errors
+						.form__field.form-group
+							span.form__field-title Password
+							label.form__label
+								span(aria-hidden="true").glyphicon.form-control-feedback
+								input(type="password" data-error="Required field" required).form__input.form-control
+							.help-block.with-errors
+						.form__bottom
+							button(type="submit").button.button_blue.button_mini Next
+			.sign-up__box
+				.box-price
+					.box-price__title One simple price
+					.box-price__subtitle Get full access to all data
+					.box-price__field
+						sub for
+						strong 59
+						sup eur/mnth
+					.box-price__text Unsubscribe in 
+						strong 2 weeks
+						|  and pay only 
+						strong 10 euro
+			.sign-up__bottom
+				p Have an account? 
+					a(href="#") Log In

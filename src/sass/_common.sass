@@ -57,8 +57,18 @@ body
 	+reg
 	font-size: 12px
 	line-height: 1.4
+	min-width: 1000px 
+	position: relative
 
-h1, h2, h3, h4, h5, h6, strong, b, th
+.out
+	min-height: 100%
+	margin-bottom: -334px
+	&:after
+		content: "" 
+		display: block
+		height: 334px
+
+h1, h2, h3, h4, h5, h6, strong, b, th, label
 	font-weight: normal
 a
 	text-decoration: none
@@ -76,6 +86,9 @@ button
 	display: inline-block
 	vertical-align: top
 	padding: 12px 30px 11px
+	text-decoration: none !important
+	&:hover, &:focus, &:visited
+		color: #fff 
 
 .tabs
 	font-size: 0
@@ -92,12 +105,15 @@ button
 	padding: 6px 15px 5px
 	display: inline-block
 	vertical-align: top
+	text-decoration: none !important
+	&:hover, &:focus, &:visited
+		color: #fff 
 	&.is-active
 		border: 1px solid #f8e71c
 		border-radius: 4px
 		padding: 5px 14px 4px
 
-.btn
+.button
 	display: inline-block
 	vertical-align: top
 	+light
@@ -105,14 +121,35 @@ button
 	font-size: 22px
 	line-height: 25px
 	border-radius: 4px
+	text-decoration: none !important
+	letter-spacing: 0.05em 
+	&:hover, &:focus, &:visited
+		color: white 
 	&_blue
 		background-color: #4a90e2
 		box-shadow: inset 0 -2px 0 #4370a4
 		padding: 9px 38px 12px 
+		&:hover
+			background-color: #407dc4
+			box-shadow: inset 0 2px 0 #376395
 	&_white
 		border: 2px solid #fff
 		padding: 7px 36px 10px
 		background: none
+	&_red
+		background-color: #e75c6d
+		box-shadow: inset 0 -2px 0 #cb3144
+	&_yellow
+		background-color: #f8e71c
+		box-shadow: inset 0 -2px 0 #cdc23d
+		font-size: 18px
+		line-height: 21px
+		+reg
+		color: #4a4a4a
+		padding: 9px 12px 10px 
+		width: 100%
+		&:hover, &:focus, &:visited
+			color: #4a4a4a 
 	&_small
 		font-size: 16px
 		line-height: 19px
@@ -122,4 +159,105 @@ button
 		line-height: 24px
 		padding: 10px 30px 14px
 		+reg
-		letter-spacing: 0.05em 
+	&_mini
+		font-size: 14px
+		line-height: 16px
+		padding: 12px 28px 12px 
+	span, i
+		display: inline-block
+		vertical-align: middle
+	i
+		font-size: 11px
+		margin-right: 12px
+		margin-top: -1px
+
+
+//redirecting
+.body-redirecting
+	background: #fff 
+.redirecting
+	text-align: center
+	padding: 121px 18px 135px 
+	max-width: 630px
+	margin: 0 auto 
+	&__logo
+		color: #4a90e2
+		font-size: 23px
+		line-height: 1
+		+reg
+		padding: 14px 0 1px 52px
+		position: relative 
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 62px
+		&:hover, &:focus, &:visited
+			color: #4a90e2
+			text-decoration: none
+		.icon-logo
+			font-size: 38px
+			position: absolute
+			top: 0
+			left: 0
+	&__title
+		font-size: 30px
+		line-height: 35px
+		+med
+		margin-bottom: 120px
+	&__text
+		color: #4a4a4a
+		font-size: 20px
+		line-height: 24px
+	.load
+		margin-bottom: 70px
+
+@keyframes load
+	0%
+		transform: rotate(-360deg)
+
+.load
+	text-align: center
+	font-size: 0
+	.load__icon
+		width: 86px
+		height: 86px
+		background: url(../img/load.svg) no-repeat center center
+		background-size: contain
+		display: inline-block
+		vertical-align: top 
+		animation: load 1s infinite linear
+
+//form
+
+.form-group
+	.help-block
+		color: #e8374d
+		font-size: 14px
+		line-height: 16px	
+	.form-control-feedback
+		height: 40px
+		line-height: 40px
+.has-error 
+	.form-control
+		&.form__input
+			box-shadow: none
+			border: 2px solid #e8374d
+			padding: 8px 13px 9px
+			&:focus
+				box-shadow: none
+				border-color: #e8374d 
+		&.filter__input
+			&:focus
+				box-shadow: none
+	.form-control-feedback
+		display: none
+.has-success
+	.form-control
+		&.form__input
+			border-color: #d7d7d7 
+			box-shadow: inset 0 -2px 3px rgba(115, 115, 115, 0.25)
+			&:focus
+				box-shadow: none
+				border-color: #d7d7d7 
+		&.filter__input
+			&:focus
+				box-shadow: none

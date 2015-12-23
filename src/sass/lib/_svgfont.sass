@@ -5,13 +5,17 @@
 	font-weight: normal
 	font-style: normal
 
-$icon-fb: "\EA01"
-$icon-logo: "\EA02"
-$icon-map: "\EA03"
-$icon-money: "\EA04"
-$icon-rent: "\EA05"
-$icon-time: "\EA06"
-$icon-tw: "\EA07"
+$icon-check: "\EA01"
+$icon-fb: "\EA02"
+$icon-logo: "\EA03"
+$icon-map: "\EA04"
+$icon-money: "\EA05"
+$icon-next: "\EA06"
+$icon-prev: "\EA07"
+$icon-rent: "\EA08"
+$icon-settings: "\EA09"
+$icon-time: "\EA0A"
+$icon-tw: "\EA0B"
 
 
 %icon
@@ -28,6 +32,8 @@ $icon-tw: "\EA07"
 	@extend %icon
 	display: inline-block
 
+.icon-check:before
+	content: $icon-check
 .icon-fb:before
 	content: $icon-fb
 .icon-logo:before
@@ -36,8 +42,14 @@ $icon-tw: "\EA07"
 	content: $icon-map
 .icon-money:before
 	content: $icon-money
+.icon-next:before
+	content: $icon-next
+.icon-prev:before
+	content: $icon-prev
 .icon-rent:before
 	content: $icon-rent
+.icon-settings:before
+	content: $icon-settings
 .icon-time:before
 	content: $icon-time
 .icon-tw:before

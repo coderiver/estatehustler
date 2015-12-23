@@ -1,0 +1,38 @@
+extends _layout-bg
+
+block title
+	title Title of template
+
+block content
+	header.header
+		.header__inner
+			a(href="#").logo
+				i.icon-logo
+				| EstateHustler
+	.account
+		.account__box
+			aside.account__tabs
+				ul
+					li
+						a(href="#").is-active Edit profile
+					li
+						a(href="#") Change password
+					li
+						a(href="#") Subscribe details
+			section.account__block
+				.account__form.form
+					form(action="")
+						.form__title Account details
+						.account__field
+							.form__info
+								span.form__info-title.form__info-title_gray Your name
+								span.form__info-text Nik Muller
+						.account__field
+							.form__info
+								span.form__info-title.form__info-title_gray Email
+								span.form__info-text nikmuller@gmail.com
+						button.button.button_blue.button_mini Change
+		.account__bottom
+			a(href="#").button.button_red.button_mini 
+				i.icon-prev 
+				span Back to data

@@ -1,0 +1,234 @@
+.body-bg
+	background-image: linear-gradient(150deg, #4a90e2 0%, #288e1a 100%)
+	border-top: 1px solid #979797
+
+.account
+	max-width: 640px
+	margin: 0 auto
+	padding: 160px 0 50px
+	&__box
+		background: #fff
+		display: table
+		width: 100%
+		margin-bottom: 17px
+	&__tabs, &__block
+		display: table-cell
+		vertical-align: top
+	&__block
+		width: 63%
+		padding: 38px 52px 45px
+	&__tabs
+		background: #d9e9ed 
+		width: 37%
+		a
+			border-bottom: 1px solid #fff
+			color: #4a4a4a
+			font-size: 15px
+			line-height: 18px
+			padding: 22px 25px
+			display: block
+			position: relative
+			&.is-active
+				&:before, &:after
+					display: block
+			&:before, &:after
+				content: "" 
+				position: absolute
+				display: none
+			&:before
+				top: 0
+				bottom: 0
+				right: 0
+				border-left: 4px solid #358f68 
+			&:after
+				top: 50%
+				right: -6px
+				margin-top: -6px
+				+arr(7, 12, #358f68, r)
+
+.form
+	&__title
+		color: #000
+		font-size: 20px
+		line-height: 24px
+		+bold
+		margin-bottom: 20px
+	&__info
+		padding: 3px 0 35px
+		&-title
+			margin-bottom: 11px
+		&-text
+			color: #000
+			font-size: 16px
+			line-height: 19px
+			display: block
+	&__field, &__info
+		&-title
+			color: #000
+			font-size: 14px
+			line-height: 16px
+			display: block
+			&_gray
+				color: #9b9b9b
+	&__field
+		&-title
+			margin-bottom: 5px
+	&__input
+		border: 1px solid #d7d7d7
+		border-radius: 4px
+		padding: 9px 14px 10px
+		color: #000
+		font-size: 14px
+		line-height: 16px 
+		+reg
+		width: 100%
+		box-shadow: none
+		height: auto
+		&:focus
+			box-shadow: none
+	&__bottom
+		padding-top: 17px
+	&__label
+		display: block
+		position: relative
+		.icon-check
+			position: absolute
+			top: 50%
+			right: 10px
+			margin-top: -5px
+			font-size: 10px
+			color: #417505
+			display: none
+
+.steps
+	position: relative
+	max-width: 680px
+	margin: 0 auto 73px
+	&:before, &:after
+		content: "" 
+		position: absolute
+		top: 50%
+		border-bottom: 2px solid #fff
+		margin-top: -1px 
+		width: calc(50% - 71px) 
+	&:before
+		left: 48px
+	&:after
+		right: 48px
+	&__list
+		font-size: 0.1px
+		position: relative
+		text-align: justify
+		&:after
+			display: inline-block
+			width: 100%
+			content: "" 
+	li
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		position: relative
+		z-index: 2
+		&.is-active
+			.steps
+				&__number
+					background: #fff
+					color: #4a90e2 
+	&__number
+		color: #fff
+		font-size: 34px
+		line-height: 40px
+		+bold
+		width: 48px
+		height: 48px
+		border: 2px solid #fff
+		padding: 1px 0 3px
+		border-radius: 50%
+	&__title
+		color: #fff
+		font-size: 15px
+		line-height: 18px
+		+light
+		position: absolute
+		top: 100%
+		left: 50%
+		width: 200px
+		margin: 10px 0 0 -100px
+
+.sign-up
+	padding: 109px 0 50px 
+	&__container
+		max-width: 625px
+		margin: 0 auto
+		+clr
+	&__form
+		float: left
+		width: 55%
+		background-color: #fff
+		padding: 37px 42px 58px
+	&__box
+		float: right
+		width: 45%
+		background-color: rgba(255, 255, 255, 0.8)
+		border-radius: 0 4px 4px 0
+		margin-top: 58px
+		padding: 41px 38px 27px 
+	&__bottom
+		clear: both
+		padding: 15px 42px
+		p
+			color: #fff
+			font-size: 13px
+			line-height: 1.2
+			+light
+			a
+				color: #fff
+				font-size: 14px
+				text-decoration: underline
+				+reg
+				margin: 0 5px 
+
+.box-price
+	text-align: center
+	&__title
+		color: #000
+		font-size: 28px
+		line-height: 33px
+		+light
+		margin-bottom: 47px
+	&__subtitle
+		color: #000
+		font-size: 14px
+		line-height: 16px
+		margin-bottom: 14px
+	&__field
+		background-color: rgba(255, 255, 255, 0.9)
+		border-radius: 4px
+		text-align: center
+		font-size: 0
+		margin-bottom: 30px
+		strong, sub, sup
+			display: inline-block
+		strong
+			vertical-align: top
+			font-size: 50px
+			color: #358f65
+			line-height: 66px
+		sub, sup
+			font-size: 14px
+			line-height: 16px
+		sub
+			vertical-align: bottom
+			bottom: 10px
+			right: 9px
+		sup
+			vertical-align: top
+			top: 15px
+			left: 4px
+	&__text
+		color: #4a4a4a
+		font-size: 13px
+		line-height: 20px
+		+light
+		strong
+			+med

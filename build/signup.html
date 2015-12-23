@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title of template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <script src="js/app.js"></script>
+  </head>
+  <body class="body-bg">
+    <header class="header">
+      <div class="header__inner"><a href="#" class="logo"><i class="icon-logo"></i>EstateHustler</a></div>
+    </header>
+    <div class="sign-up">
+      <div class="steps">
+        <ul class="steps__list">
+          <li class="is-active">
+            <div class="steps__number">1</div>
+            <div class="steps__title">Sing Up</div>
+          </li>
+          <li>
+            <div class="steps__number">2</div>
+            <div class="steps__title">Pay</div>
+          </li>
+          <li>
+            <div class="steps__number">3</div>
+            <div class="steps__title">Explore the data</div>
+          </li>
+        </ul>
+      </div>
+      <div class="sign-up__container">
+        <div class="sign-up__form">
+          <div class="form">
+            <form action="" role="form" class="js-validation">
+              <div class="form__title">Sing up</div>
+              <div class="form__field form-group"><span class="form__field-title">Your name</span>
+                <label class="form__label"><span aria-hidden="true" class="glyphicon form-control-feedback"></span>
+                  <input type="text" data-error="Required field" required class="form__input form-control">
+                </label>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form__field form-group"><span class="form__field-title">E-mail</span>
+                <label class="form__label"><span aria-hidden="true" class="glyphicon form-control-feedback"></span>
+                  <input type="email" data-error="Incorrect email adress" required class="form__input form-control">
+                </label>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form__field form-group"><span class="form__field-title">Password</span>
+                <label class="form__label"><span aria-hidden="true" class="glyphicon form-control-feedback"></span>
+                  <input type="password" data-error="Required field" required class="form__input form-control">
+                </label>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form__bottom">
+                <button type="submit" class="button button_blue button_mini">Next</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="sign-up__box">
+          <div class="box-price">
+            <div class="box-price__title">One simple price</div>
+            <div class="box-price__subtitle">Get full access to all data</div>
+            <div class="box-price__field"><sub>for</sub><strong>59</strong><sup>eur/mnth</sup></div>
+            <div class="box-price__text">Unsubscribe in <strong>2 weeks</strong> and pay only <strong>10 euro</strong></div>
+          </div>
+        </div>
+        <div class="sign-up__bottom">
+          <p>Have an account? <a href="#">Log In</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

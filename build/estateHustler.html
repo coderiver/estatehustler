@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title of template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" media="all" href="css/style.css">
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <!--BEGIN out-->
+    <div class="out">
+      <header class="header">
+        <div class="header__inner"><a href="#" class="logo logo_blue"><i class="icon-logo"></i>EstateHustler</a>
+          <div class="header__right">
+            <div class="header__text">Hello Hustler!</div>
+            <div class="h-profile"><i class="icon-settings"></i>
+              <div class="h-profile__name">Andrey</div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main main_bg">
+        <div class="filter">
+          <div class="filter__form">
+            <form action="" role="form">
+              <div class="filter__field filter__field_city form-group">
+                <label class="filter__label">
+                  <input type="text" placeholder="Select the City" required class="filter__input form-control">
+                </label>
+              </div>
+              <div class="filter__field filter__field_price form-group">
+                <label class="filter__label"><span class="filter__symbols">€</span>
+                  <input type="text" placeholder="Price up to" required class="filter__input form-control">
+                </label>
+              </div>
+              <div class="filter__field filter__field_roi form-group">
+                <label class="filter__label"><span class="filter__symbols">%</span>
+                  <input type="text" placeholder="ROI from" required class="filter__input form-control">
+                </label>
+              </div>
+              <div class="filter__button">
+                <button type="submit" class="button button_yellow">Show apartments</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="main-table">
+          <div class="main-table__text"> <strong>8 567</strong> rented apartments in Germany today</div>
+          <div class="main-table__inner">
+            <div class="table-wrapper">
+              <table class="table table_mod">
+                <thead>
+                  <tr>								
+                    <th class="table__city">
+                      <div class="table__title">City</div>
+                    </th>
+                    <th class="table__district">
+                      <div class="table__title">District</div>
+                    </th>
+                    <th class="table__full-price">
+                      <div class="table__title"> <strong>Full price</strong></div>
+                    </th>
+                    <th class="table__rms is-disable">
+                      <div class="table__title">Rms.</div>
+                    </th>
+                    <th class="table__sqm is-disable">
+                      <div class="table__title">Sq.m.</div>
+                    </th>
+                    <th class="table__price-sqm is-disable">
+                      <div class="table__title">Price per sq.m.</div>
+                    </th>
+                    <th class="table__hausgeld is-disable">
+                      <div class="table__title">Haus-geld</div>
+                    </th>
+                    <th class="table__income">
+                      <div class="table__title">Rental income</div>
+                    </th>
+                    <th class="table__profit">
+                      <div class="table__title"> <strong>Monthly profit</strong></div>
+                    </th>
+                    <th class="table__roi">
+                      <div class="table__title"> <strong>ROI from rent, %</strong></div>
+                    </th>
+                    <th class="table__district-price">
+                      <div class="table__title">District growth price, %</div>
+                    </th>
+                    <th class="table__agency is-disable">
+                      <div class="table__title">Agency</div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table__city"> 
+                      <div class="table__text">Berlin</div>
+                    </td>
+                    <td class="table__district">
+                      <div class="table__text">Tempelhof</div>
+                    </td>
+                    <td class="table__full-price">
+                      <div class="table__sticker is-yellow">60 000</div>
+                    </td>
+                    <td class="table__rms is-disable">
+                      <div class="table__numbers">3</div>
+                    </td>
+                    <td class="table__sqm is-disable">
+                      <div class="table__numbers">81,86</div>
+                    </td>
+                    <td class="table__price-sqm is-disable">
+                      <div class="table__sticker is-green">2 716,4</div>
+                    </td>
+                    <td class="table__hausgeld is-disable">
+                      <div class="table__numbers">300</div>
+                    </td>
+                    <td class="table__income">
+                      <div class="table__numbers">1 800</div>
+                    </td>
+                    <td class="table__profit">
+                      <div class="table__sticker is-green">1 500</div>
+                    </td>
+                    <td class="table__roi">
+                      <div class="table__sticker is-yellow">6,8</div>
+                    </td>
+                    <td class="table__district-price">
+                      <div class="table__sticker is-green">10,5</div>
+                    </td>
+                    <td class="table__agency is-disable">
+                      <div class="table__text">Engels&Vö</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__city"> 
+                      <div class="table__text">Berlin</div>
+                    </td>
+                    <td class="table__district">
+                      <div class="table__text">Tempelhof</div>
+                    </td>
+                    <td class="table__full-price">
+                      <div class="table__sticker is-yellow">60 000</div>
+                    </td>
+                    <td class="table__rms is-disable">
+                      <div class="table__numbers">3</div>
+                    </td>
+                    <td class="table__sqm is-disable">
+                      <div class="table__numbers">81,86</div>
+                    </td>
+                    <td class="table__price-sqm is-disable">
+                      <div class="table__sticker is-green">2 716,4</div>
+                    </td>
+                    <td class="table__hausgeld is-disable">
+                      <div class="table__numbers">300</div>
+                    </td>
+                    <td class="table__income">
+                      <div class="table__numbers">1 800</div>
+                    </td>
+                    <td class="table__profit">
+                      <div class="table__sticker is-green">1 500</div>
+                    </td>
+                    <td class="table__roi">
+                      <div class="table__sticker is-yellow">6,8</div>
+                    </td>
+                    <td class="table__district-price">
+                      <div class="table__sticker is-green">10,5</div>
+                    </td>
+                    <td class="table__agency is-disable">
+                      <div class="table__text">Engels&Vö</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__city"> 
+                      <div class="table__text">Berlin</div>
+                    </td>
+                    <td class="table__district">
+                      <div class="table__text">Tempelhof</div>
+                    </td>
+                    <td class="table__full-price">
+                      <div class="table__sticker is-yellow">60 000</div>
+                    </td>
+                    <td class="table__rms is-disable">
+                      <div class="table__numbers">3</div>
+                    </td>
+                    <td class="table__sqm is-disable">
+                      <div class="table__numbers">81,86</div>
+                    </td>
+                    <td class="table__price-sqm is-disable">
+                      <div class="table__sticker is-green">2 716,4</div>
+                    </td>
+                    <td class="table__hausgeld is-disable">
+                      <div class="table__numbers">300</div>
+                    </td>
+                    <td class="table__income">
+                      <div class="table__numbers">1 800</div>
+                    </td>
+                    <td class="table__profit">
+                      <div class="table__sticker is-green">1 500</div>
+                    </td>
+                    <td class="table__roi">
+                      <div class="table__sticker is-yellow">6,8</div>
+                    </td>
+                    <td class="table__district-price">
+                      <div class="table__sticker is-green">10,5</div>
+                    </td>
+                    <td class="table__agency is-disable">
+                      <div class="table__text">Engels&Vö</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__city"> 
+                      <div class="table__text">Berlin</div>
+                    </td>
+                    <td class="table__district">
+                      <div class="table__text">Tempelhof</div>
+                    </td>
+                    <td class="table__full-price">
+                      <div class="table__sticker is-yellow">60 000</div>
+                    </td>
+                    <td class="table__rms is-disable">
+                      <div class="table__numbers">3</div>
+                    </td>
+                    <td class="table__sqm is-disable">
+                      <div class="table__numbers">81,86</div>
+                    </td>
+                    <td class="table__price-sqm is-disable">
+                      <div class="table__sticker is-green">2 716,4</div>
+                    </td>
+                    <td class="table__hausgeld is-disable">
+                      <div class="table__numbers">300</div>
+                    </td>
+                    <td class="table__income">
+                      <div class="table__numbers">1 800</div>
+                    </td>
+                    <td class="table__profit">
+                      <div class="table__sticker is-green">1 500</div>
+                    </td>
+                    <td class="table__roi">
+                      <div class="table__sticker is-yellow">6,8</div>
+                    </td>
+                    <td class="table__district-price">
+                      <div class="table__sticker is-green">10,5</div>
+                    </td>
+                    <td class="table__agency is-disable">
+                      <div class="table__text">Engels&Vö</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="table__city"> 
+                      <div class="table__text">Berlin</div>
+                    </td>
+                    <td class="table__district">
+                      <div class="table__text">Tempelhof</div>
+                    </td>
+                    <td class="table__full-price">
+                      <div class="table__sticker is-yellow">60 000</div>
+                    </td>
+                    <td class="table__rms is-disable">
+                      <div class="table__numbers">3</div>
+                    </td>
+                    <td class="table__sqm is-disable">
+                      <div class="table__numbers">81,86</div>
+                    </td>
+                    <td class="table__price-sqm is-disable">
+                      <div class="table__sticker is-green">2 716,4</div>
+                    </td>
+                    <td class="table__hausgeld is-disable">
+                      <div class="table__numbers">300</div>
+                    </td>
+                    <td class="table__income">
+                      <div class="table__numbers">1 800</div>
+                    </td>
+                    <td class="table__profit">
+                      <div class="table__sticker is-green">1 500</div>
+                    </td>
+                    <td class="table__roi">
+                      <div class="table__sticker is-yellow">6,8</div>
+                    </td>
+                    <td class="table__district-price">
+                      <div class="table__sticker is-green">10,5</div>
+                    </td>
+                    <td class="table__agency is-disable">
+                      <div class="table__text">Engels&Vö</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="main-table__bottom">
+              <div class="main-table__results"><strong>22</strong> from <strong>2 034</strong> apartments</div>
+              <div class="pages"><a href="#" class="pages__btn"><i class="icon-prev"></i></a>
+                <div class="pages__text">page 1 from 60</div><a href="#" class="pages__btn"><i class="icon-next"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END out-->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__menu">
+          <div class="footer__subtitle">EstateHustler</div>
+          <ul class="footer__list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Impressum</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__share">
+          <div class="footer__subtitle">Follow us</div>
+          <ul class="footer__social">
+            <li><a href="#"><i class="icon-tw"></i></a></li>
+            <li><a href="#"><i class="icon-fb"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer__feedback">
+          <div class="footer__title">Got feedback?</div>
+          <div class="footer__form">
+            <form action="">
+              <div class="footer__field">
+                <input type="text" placeholder="Your email" class="footer__input">
+              </div>
+              <div class="footer__field">
+                <input type="text" placeholder="Ask a question" class="footer__input">
+              </div>
+              <div class="footer__bottom">
+                <button class="button button_white button_small">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">© 2015 EstateHustler.com</div>
+      </div>
+    </footer>
+  </body>
+</html>
